@@ -5,7 +5,7 @@ class MongoDatabase {
   static DbCollection? collection;
 
   static const String connectionString =
-      "mongodb+srv://dipam:Dipam%408849@cluster0.oepzohh.mongodb.net/school_management?retryWrites=true&w=majority";
+      "mongodb+srv://*******@cluster0.oepzohh.mongodb.net/school_management?retryWrites=true&w=majority";
 
   static Future<void> connect() async {
     db = await Db.create(connectionString);
